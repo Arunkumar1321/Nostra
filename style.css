@@ -664,6 +664,9 @@ textarea:focus {
 .arrival__s1 h2{
   display: block;
 }
+.Brand__Container img{
+  flex-basis: 22%;
+}
  
 }
 @media screen and (max-width:600px){
@@ -692,6 +695,9 @@ textarea:focus {
   }
   .Col__pi__list{
     margin-left: 50px;
+  }
+  .Brand__Container img{
+    flex-basis: 45%;
   }
 }
 
