@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css"
+        integrity="sha512-NhLySQDkiKSKnT+R795uaHWRQ7D3VuIvgeOLCK8cWq4w5fq4sWF90gj8eURpTqn/f1mFzqClpOz8JPlgVTLfFw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!--Ad section -->
+    <div class="ad1">
+        <h1>Sign up and GET 20% OFF for your first order </h1>
+        <p class="cancel">x</p>
+    </div>
+    <!--Navbar-->
+    <section class="Navbar">
+        <h1>Nostra</h1>
+        <div class="Navbar__s1">
+            <a href="index.html">Home</a>
+            <a href="collection.html" target="_parent">Collections</a>
+            <a href="contact.html" target="_parent">Contact Us</a>
+
+        </div>
+        <div class="Navbar__s2">
+            <i class="fa-solid fa-bars" style="color: rgb(1, 12, 21);"></i>
+        </div>
+    </section>
+    <!--Collection page-->
+    <section class="Col">
+        <h1>New Products</h1>
+        <div class="Col__list">
+            <div class="Col__products">
+                <i class="fa-solid fa-magnifying-glass" style="color: rgb(1, 12, 21);"></i>
+                <input type="text" placeholder="Search for products" id="Search" oninput="searchProducts()">
+            </div>
+            <button onclick="Filterproducts('Coatsuit')">Coat</button>
+            <button onclick="Filterproducts('shirts')">Shirts</button>
+            <button onclick="Filterproducts('shorts')">Shorts</button>
+            <button onclick="Filterproducts('pants')">Pants</button>
+            <div class="Col__list__s1" id="productlist">
+                <div class="Col__pi__list">
+
+                    <img src="./Products images/P1.jpg">
+                    <div class="Col__pi__details">
+                        <h2>Hawai shirts</h2>
+                        <h3>$22</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+
+                    <img src="./Products images/P2.jpg">
+                    <div class="Col__pi__details">
+                        <h2>Malai Shirts</h2>
+                        <h3>$27</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+
+                    <img src="./Products images/P3.jpg">
+                    <div class="Col__pi__details">
+                        <h2>Cargo shirts</h2>
+                        <h3>$24</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/P4.png">
+                    <div class="Col__pi__details">
+                        <h2>Good-Vibe T-shirts</h2>
+                        <h3>$20</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/P5.png">
+                    <div class="Col__pi__details">
+                        <h2>Shine T-shirts</h2>
+                        <h3>$25</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/P6.png">
+                    <div class="Col__pi__details">
+                        <h2>Biggie T-shirts</h2>
+                        <h3>$15</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/P7.png">
+                    <div class="Col__pi__details">
+                        <h2>Men Track pants</h2>
+                        <h3>$30</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/P8.png">
+                    <div class="Col__pi__details">
+                        <h2>Women Track pants</h2>
+                        <h3>$27</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/P9.png">
+                    <div class="Col__pi__details">
+                        <h2>Cargo pants</h2>
+                        <h3>$35</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/P10.png">
+                    <div class="Col__pi__details">
+                        <h2>Jean skirts</h2>
+                        <h3>$20</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/P11.png">
+                    <div class="Col__pi__details">
+                        <h2>Sports skirts</h2>
+                        <h3>$30</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/P12.png">
+                    <div class="Col__pi__details">
+                        <h2>Modern skirts</h2>
+                        <h3>$35</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/P13.jpg">
+                    <div class="Col__pi__details">
+                        <h2>Grey Coatsuit</h2>
+                        <h3>$70</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/P14.jpg">
+                    <div class="Col__pi__details">
+                        <h2>Sandal Coatsuit</h2>
+                        <h3>$72</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/P15.jpg">
+                    <div class="Col__pi__details">
+                        <h2>Light blue Coatsuit </h2>
+                        <h3>$80</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/p16.webp">
+                    <div class="Col__pi__details">
+                        <h2>Lavendar Lehenga</h2>
+                        <h3>$90</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/P17.webp">
+                    <div class="Col__pi__details">
+                        <h2>Purple Lehenga</h2>
+                        <h3>$88</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/p18.webp">
+                    <div class="Col__pi__details">
+                        <h2>Kovai Lehenga</h2>
+                        <h3>$95</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/p19.webp">
+                    <div class="Col__pi__details">
+                        <h2>Hawai shorts</h2>
+                        <h3>$17</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/p20.webp">
+                    <div class="Col__pi__details">
+                        <h2>Black shorts</h2>
+                        <h3>$15</h3>
+
+                    </div>
+                </div>
+                <div class="Col__pi__list">
+                    <img src="./Products images/p21.webp">
+                    <div class="Col__pi__details">
+                        <h2>Men shorts</h2>
+                        <h3>$22</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <!--Footer Section-->
+    <section class="Footer">
+        <h1>Nostra</h1>
+        <p class="Footer__Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, provident.</p>
+        <div class="Footer__s1">
+            <img src="./Images/I24.png">
+            <img src="./Images/I25.png">
+            <img src="./Images/I26.png">
+
+        </div>
+        <p>&copy; 2026 Nostra.com</p>
+
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
